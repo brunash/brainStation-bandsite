@@ -9,8 +9,15 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    // justify-content: space-between;
     width: 100%;
     height: 4rem;
+    padding: 1rem 0 1rem 0;
+
+    &__underline:hover {
+        text-decoration: underline;
+        width: 20rem
+    }
 
 }
 
@@ -20,35 +27,106 @@
 }
 
 .nav-bar__options--list {
+    font-size: 1.2rem;
     list-style: none;
     display: flex;
-    // justify-content: space-between;
-
-
-
+    width: 90%;
+    justify-content: space-between;
+    // margin-right: auto;
+    padding: 0 3rem 0 3rem;
 }
 
-// .nav-bar__options {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-// }
-// }
+.nav-bar__options {
+    justify-content: center;
+    width: 90%;
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-evenly;
+}
+
 
 .band-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
     background:
-        // #32323287
-        /* top, transparent red */
         linear-gradient(rgb(50, 50, 50, 0.5),
             rgb(50, 50, 50, 0.5)),
-        /* your image */
         url(/assets/images/hero-bio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 335px;
-    // background-blend-mode: overlay;
-    // background-color: #323232;
-    // opacity: 50%;
+    height: 330px;
+    color: $white-text;
+    ;
+
+    &__name {
+        padding-left: 1rem;
+        // font-size: 2rem;
+    }
+}
+
+.about {
+    padding: 1.5rem 1rem 0 1rem;
+
+    &__img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__quote {
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+
+.gallery {
+    margin: auto;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+
+    img {
+        width: 100%;
+        height: auto;
+        padding-top: 1rem;
+    }
+}
+
+.contact {
+    padding: 1.5rem 1rem 1.5rem 1rem;
+
+    &__social--logos {
+        img {
+            height: 30px;
+            padding-right: 1rem;
+        }
+    }
+
+    &__people {
+        padding-bottom: 4rem;
+    }
+
+    &__people-wrap {
+        padding-top: 0.5rem;
+    }
+
+    &__people-wrap--name {
+        padding: 0.5rem 0 0.5rem 0;
+        line-height: 5px;
+    }
+
+    &__people-wrap--info {
+        padding: 0.5rem 0 0.5rem 0;
+        line-height: 5px;
+        font-weight: 100;
+    }
+
+    &__people-wrap--email {
+        padding: 0.5rem 0 0.5rem 0;
+        line-height: 5px;
+        font-weight: 100;
+    }
 
 
 }

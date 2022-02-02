@@ -7,6 +7,22 @@ body {
   font-family: "Avenir";
 }
 
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.bandsite-logo {
+  width: 120px;
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav-bar {
   background-color: #323232;
   color: #FFFFFF;
@@ -15,6 +31,11 @@ body {
   flex-direction: column;
   width: 100%;
   height: 4rem;
+  padding: 1rem 0 1rem 0;
+}
+.nav-bar__underline:hover {
+  text-decoration: underline;
+  width: 20rem;
 }
 
 .contact {
@@ -23,13 +44,82 @@ body {
 }
 
 .nav-bar__options--list {
+  font-size: 1.2rem;
   list-style: none;
   display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 0 3rem 0 3rem;
+}
+
+.nav-bar__options {
+  justify-content: center;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .band-title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
   background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(/assets/images/hero-bio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 335px;
+  height: 330px;
+  color: #FFFFFF;
+}
+.band-title__name {
+  padding-left: 1rem;
+}
+
+.about {
+  padding: 1.5rem 1rem 0 1rem;
+}
+.about__img img {
+  width: 100%;
+  height: auto;
+}
+.about__quote {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.gallery {
+  margin: auto;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+}
+
+.contact {
+  padding: 1.5rem 1rem 1.5rem 1rem;
+}
+.contact__social--logos img {
+  height: 30px;
+  padding-right: 1rem;
+}
+.contact__people {
+  padding-bottom: 4rem;
+}
+.contact__people-wrap {
+  padding-top: 0.5rem;
+}
+.contact__people-wrap--name {
+  padding: 0.5rem 0 0.5rem 0;
+  line-height: 5px;
+}
+.contact__people-wrap--info {
+  padding: 0.5rem 0 0.5rem 0;
+  line-height: 5px;
+  font-weight: 100;
+}
+.contact__people-wrap--email {
+  padding: 0.5rem 0 0.5rem 0;
+  line-height: 5px;
+  font-weight: 100;
 }/*# sourceMappingURL=bio.css.map */
