@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/fonts/AvenirNextLTPro-Regular.otf");
+}
+body {
+  margin: auto;
+  font-family: "Avenir";
+}
+
+.nav-bar {
+  background-color: #323232;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 4rem;
+}
+
+.contact {
+  background-color: #323232;
+  color: #FFFFFF;
+}
+
+.nav-bar__options--list {
+  list-style: none;
+  display: flex;
+}
+
+.band-title {
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(/assets/images/hero-bio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 335px;
+}/*# sourceMappingURL=bio.css.map */
