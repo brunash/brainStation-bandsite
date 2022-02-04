@@ -1,0 +1,16 @@
+@use './global'as *;
+
+$tablet-size: 768px;
+$desktop-size: 1024px;
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-size) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-size) {
+        @content;
+    }
+}
