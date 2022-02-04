@@ -38,8 +38,6 @@ a {
   color: #FFFFFF;
   border-bottom: 3px solid #FFFFFF;
   transition: 0.15s;
-  display: flex;
-  justify-content: center;
 }
 
 .nav-bar {
