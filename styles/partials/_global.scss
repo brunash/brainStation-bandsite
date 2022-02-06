@@ -87,18 +87,23 @@ a {
         width: 100%;
         color: $mercury;
 
+    }
 
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+    }
 
-        @include tablet {
-            justify-content: left;
-            padding-left: 3rem;
-            position: left;
-            height: 87px;
-            width: 25rem;
+    @include tablet {
+        justify-content: left;
+        padding-left: 3rem;
+        position: left;
+        height: 87px;
+        width: 25rem;
 
-            li {
-                padding-top: 2rem;
-            }
+        li {
+            padding-top: 2rem;
         }
     }
 }

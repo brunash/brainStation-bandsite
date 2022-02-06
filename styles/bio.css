@@ -76,15 +76,20 @@ a {
   width: 100%;
   color: #E1E1E1;
 }
+.nav-bar__options h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
 @media screen and (min-width: 768px) {
-  .nav-bar__options--list {
+  .nav-bar__options {
     justify-content: left;
     padding-left: 3rem;
     position: left;
     height: 87px;
     width: 25rem;
   }
-  .nav-bar__options--list li {
+  .nav-bar__options li {
     padding-top: 2rem;
   }
 }
