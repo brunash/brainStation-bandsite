@@ -1,0 +1,302 @@
+@use './partials/variables'as *;
+@use './partials/global'as *;
+@use './partials/mixins'as *;
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    @include tablet {
+        font-size: 3rem;
+    }
+}
+
+.band-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background:
+        linear-gradient(rgb(50, 50, 50, 0.5),
+            rgb(50, 50, 50, 0.5)),
+        url(../assets/images/hero-bio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    color: $white-text;
+    ;
+
+    @include tablet {
+        height: 40vh;
+    }
+
+    &__name {
+        padding-left: 1rem;
+
+        @include tablet {
+            font-size: 4rem;
+        }
+
+        @include desktop {
+            padding-left: 5rem;
+        }
+    }
+}
+
+.about {
+    padding: 1.5rem 1rem 0 1rem;
+
+    &__img {
+        img {
+            width: 90vw;
+            height: auto;
+
+            @include tablet {
+                position: inherit;
+                width: 80vw;
+                padding: 0 3rem 0 4rem;
+                display: flex;
+                justify-content: center;
+            }
+
+            @include desktop {
+                padding: 0;
+                width: 70vw;
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+        }
+    }
+
+    &__title {
+
+
+        @include desktop {
+            padding-left: 5rem;
+            font-size: 4rem;
+        }
+    }
+
+    &__quote {
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+
+        @include tablet {
+            padding: 0 5rem 0 5rem;
+            font-size: 1.4rem;
+        }
+
+        @include desktop {
+            padding: 0;
+            width: 60vw;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            flex-direction: column;
+            padding-right: 6.5rem;
+            font-size: 1.4rem;
+        }
+
+        &--name {
+            @include desktop {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__history {
+        @include tablet {
+            padding: 0 5rem 0 5rem;
+
+            &--story {
+                display: flex;
+                flex: row;
+                line-height: 1.4rem;
+                font-weight: 500;
+            }
+        }
+
+        @include desktop {
+            padding: 0;
+            width: 70vw;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            flex-direction: column;
+            font-size: 0.75rem;
+        }
+
+        &--title {
+            @include tablet {
+                font-size: 1.5rem;
+            }
+        }
+
+        &--story-div {
+            padding-right: 1rem;
+        }
+    }
+}
+
+
+.gallery {
+    margin: auto;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    background-color: #FAFAFA;
+
+    @include tablet {
+        display: flex table-column;
+    }
+
+    @include desktop {
+        padding: 1.5rem 5rem 1.5rem 5rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        padding-top: 1rem;
+
+        @include tablet {
+            display: grid;
+            width: 30%;
+            padding: 1rem 0.5rem 1rem 0.5rem;
+
+        }
+
+        @include desktop {
+            width: 30%;
+            padding: auto;
+        }
+    }
+
+    &__grid {
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
+
+.contact {
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    background-color: $primary-background;
+    color: $white-text;
+
+    @include tablet {
+        padding: 3rem 2rem 3rem 2rem;
+    }
+
+    @include desktop {
+        padding: 3rem 5rem 3rem 5rem;
+    }
+
+    &__social--title {
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+
+            img {
+                height: 30px;
+                padding-right: 1rem;
+            }
+        }
+
+        img {
+            height: 30px;
+            padding-right: 1rem;
+        }
+    }
+
+    &__social {
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1rem;
+
+            h2 {
+                margin: 0;
+            }
+
+            img {
+                padding: 0 0 0 3rem;
+            }
+        }
+    }
+
+    &__social--logos {
+        img {
+            height: 30px;
+            padding-right: 1rem;
+        }
+    }
+
+    &__people {
+        padding-bottom: 4rem;
+
+        @include tablet {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__people-wrap {
+        padding-top: 0.5rem;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.4rem 0 0.4rem;
+            justify-content: center;
+        }
+    }
+
+    &__people-wrap--name {
+        padding: 0.5rem 0 0.5rem 0;
+        line-height: 5px;
+    }
+
+    &__people-wrap--info {
+        padding: 0.5rem 0 0.5rem 0;
+        line-height: 5px;
+        font-weight: 100;
+
+        @include desktop {
+            font-size: 0.85rem;
+        }
+    }
+
+    &__people-wrap--email {
+        padding: 0.5rem 0 0.5rem 0;
+        line-height: 5px;
+        font-weight: 100;
+
+        @include desktop {
+            font-size: 0.85rem;
+        }
+    }
+
+
+}
+
+.contact__social--bandsite-logo {
+    visibility: hidden;
+
+    @include tablet {
+        visibility: visible;
+    }
+}
+
+.contact__band-title {
+    @include tablet {
+        visibility: hidden;
+    }
+}

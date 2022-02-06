@@ -1,0 +1,396 @@
+@font-face {
+  font-family: "avenir-regular";
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "avenir-demi";
+  src: url("../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+}
+@font-face {
+  font-family: "avenir-bold";
+  src: url("../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+html {
+  font-family: "avenir-regular", "avenir-demi", "avenir-bold";
+}
+
+body {
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.bandsite-logo {
+  width: 120px;
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  width: 100%;
+  background-color: #323232;
+  color: #FFFFFF;
+  height: 87px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.nav-bar__title {
+  padding: 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .nav-bar__title {
+    padding-left: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav-bar__title {
+    padding-left: 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.nav-bar__options {
+  width: 100%;
+}
+.nav-bar__options--list {
+  padding-left: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  color: #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .nav-bar__options--list {
+    justify-content: left;
+    padding-left: 3rem;
+    position: left;
+    height: 87px;
+    width: 25rem;
+  }
+  .nav-bar__options--list li {
+    padding-top: 2rem;
+  }
+}
+
+.nav-bar__underline {
+  text-align: center;
+  width: 50%;
+  border-bottom: 5px solid transparent;
+}
+.nav-bar__underline--active {
+  text-align: center;
+  border-bottom: 5px solid #FFF;
+  width: 50vw;
+  color: #FFFFFF;
+  padding-top: 1.5px;
+}
+@media screen and (min-width: 768px) {
+  .nav-bar__underline--active {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding-left: 0;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+.band-title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/hero-bio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .band-title {
+    height: 40vh;
+  }
+}
+.band-title__name {
+  padding-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .band-title__name {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .band-title__name {
+    padding-left: 5rem;
+  }
+}
+
+.about {
+  padding: 1.5rem 1rem 0 1rem;
+}
+.about__img img {
+  width: 90vw;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .about__img img {
+    position: inherit;
+    width: 80vw;
+    padding: 0 3rem 0 4rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__img img {
+    padding: 0;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__title {
+    padding-left: 5rem;
+    font-size: 4rem;
+  }
+}
+.about__quote {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .about__quote {
+    padding: 0 5rem 0 5rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__quote {
+    padding: 0;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    padding-right: 6.5rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__quote--name {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__history {
+    padding: 0 5rem 0 5rem;
+  }
+  .about__history--story {
+    display: flex;
+    flex: row;
+    line-height: 1.4rem;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__history {
+    padding: 0;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__history--title {
+    font-size: 1.5rem;
+  }
+}
+.about__history--story-div {
+  padding-right: 1rem;
+}
+
+.gallery {
+  margin: auto;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  background-color: #FAFAFA;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    display: flex table-column;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery {
+    padding: 1.5rem 5rem 1.5rem 5rem;
+  }
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .gallery img {
+    display: grid;
+    width: 30%;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery img {
+    width: 30%;
+    padding: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.contact {
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  background-color: #323232;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact {
+    padding: 3rem 5rem 3rem 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__social--title {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact__social--title img {
+    height: 30px;
+    padding-right: 1rem;
+  }
+}
+.contact__social--title img {
+  height: 30px;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .contact__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .contact__social h2 {
+    margin: 0;
+  }
+  .contact__social img {
+    padding: 0 0 0 3rem;
+  }
+}
+.contact__social--logos img {
+  height: 30px;
+  padding-right: 1rem;
+}
+.contact__people {
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .contact__people {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.contact__people-wrap {
+  padding-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .contact__people-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.4rem 0 0.4rem;
+    justify-content: center;
+  }
+}
+.contact__people-wrap--name {
+  padding: 0.5rem 0 0.5rem 0;
+  line-height: 5px;
+}
+.contact__people-wrap--info {
+  padding: 0.5rem 0 0.5rem 0;
+  line-height: 5px;
+  font-weight: 100;
+}
+@media screen and (min-width: 1024px) {
+  .contact__people-wrap--info {
+    font-size: 0.85rem;
+  }
+}
+.contact__people-wrap--email {
+  padding: 0.5rem 0 0.5rem 0;
+  line-height: 5px;
+  font-weight: 100;
+}
+@media screen and (min-width: 1024px) {
+  .contact__people-wrap--email {
+    font-size: 0.85rem;
+  }
+}
+
+.contact__social--bandsite-logo {
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .contact__social--bandsite-logo {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__band-title {
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=bio.css.map */

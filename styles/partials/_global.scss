@@ -1,0 +1,128 @@
+@use './variables'as *;
+@use './mixins'as *;
+
+@font-face {
+    font-family: "avenir-regular";
+    src: url("../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "avenir-demi";
+    src: url("../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "avenir-bold";
+    src: url("../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+
+
+
+html {
+    font-family: "avenir-regular",
+        "avenir-demi",
+        "avenir-bold";
+}
+
+body {
+    margin: auto;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.bandsite-logo {
+    width: 120px;
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    width: 100%;
+    background-color: $primary-background;
+    color: $white-text;
+    height: 87px;
+
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    &__title {
+        padding: 1rem 0;
+
+        @include tablet {
+            padding-left: 2rem;
+        }
+
+        @include desktop {
+            padding-left: 5rem;
+        }
+
+
+    }
+
+    @include tablet {
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+.nav-bar__options {
+    width: 100%;
+
+    &--list {
+        padding-left: 0;
+        margin: 0;
+        font-size: 1.2rem;
+        list-style: none;
+        display: flex;
+        width: 100%;
+        color: $mercury;
+
+
+
+        @include tablet {
+            justify-content: left;
+            padding-left: 3rem;
+            position: left;
+            height: 87px;
+            width: 25rem;
+
+            li {
+                padding-top: 2rem;
+            }
+        }
+    }
+}
+
+.nav-bar__underline {
+    text-align: center;
+    width: 50%;
+    border-bottom: 5px solid transparent;
+
+    &--active {
+        text-align: center;
+        border-bottom: 5px solid #FFF;
+        width: 50vw;
+        color: $white-text;
+        padding-top: 1.5px;
+
+        @include tablet {
+            width: min-content;
+            padding-left: 0;
+        }
+    }
+}
