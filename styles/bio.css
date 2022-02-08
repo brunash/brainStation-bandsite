@@ -93,27 +93,6 @@ a {
   }
 }
 
-.nav-bar__underline {
-  text-align: center;
-  width: 50%;
-  border-bottom: 5px solid transparent;
-}
-.nav-bar__underline--active {
-  text-align: center;
-  border-bottom: 5px solid #FFF;
-  width: 50vw;
-  color: #FFFFFF;
-  padding-top: 1.5px;
-}
-@media screen and (min-width: 768px) {
-  .nav-bar__underline--active {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    padding-left: 0;
-  }
-}
-
 .contact {
   padding: 1.5rem 1rem 1.5rem 1rem;
   background-color: #323232;
@@ -231,6 +210,27 @@ h1 {
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 3rem;
+  }
+}
+
+.nav-bar__underline {
+  text-align: center;
+  width: 50%;
+  border-bottom: 5px solid transparent;
+}
+.nav-bar__underline--active {
+  text-align: center;
+  border-bottom: 5px solid #FFF;
+  width: 50vw;
+  color: #FFFFFF;
+  padding-top: 1.5px;
+}
+@media screen and (min-width: 768px) {
+  .nav-bar__underline--active {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding-left: 0;
   }
 }
 

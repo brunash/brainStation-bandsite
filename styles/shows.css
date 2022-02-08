@@ -93,27 +93,6 @@ a {
   }
 }
 
-.nav-bar__underline {
-  text-align: center;
-  width: 50%;
-  border-bottom: 5px solid transparent;
-}
-.nav-bar__underline--active {
-  text-align: center;
-  border-bottom: 5px solid #FFF;
-  width: 50vw;
-  color: #FFFFFF;
-  padding-top: 1.5px;
-}
-@media screen and (min-width: 768px) {
-  .nav-bar__underline--active {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    padding-left: 0;
-  }
-}
-
 .contact {
   padding: 1.5rem 1rem 1.5rem 1rem;
   background-color: #323232;
@@ -222,4 +201,48 @@ a {
   .contact__band-title {
     visibility: hidden;
   }
+}
+
+.nav-bar__underline {
+  text-align: center;
+  width: 50%;
+  border-bottom: 5px solid transparent;
+}
+.nav-bar__underline--active {
+  text-align: center;
+  border-bottom: 5px solid #FFF;
+  width: 50vw;
+  color: #FFFFFF;
+  padding-top: 1.5px;
+}
+@media screen and (min-width: 768px) {
+  .nav-bar__underline--active {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding-right: 0;
+  }
+}
+
+.nav-bar__options--list {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .nav-bar__options--list {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 2rem;
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/hero-shows.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  color: #FFFFFF;
 }/*# sourceMappingURL=shows.css.map */

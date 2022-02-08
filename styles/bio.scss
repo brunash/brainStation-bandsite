@@ -12,6 +12,25 @@ h2 {
     }
 }
 
+.nav-bar__underline {
+    text-align: center;
+    width: 50%;
+    border-bottom: 5px solid transparent;
+
+    &--active {
+        text-align: center;
+        border-bottom: 5px solid #FFF;
+        width: 50vw;
+        color: $white-text;
+        padding-top: 1.5px;
+
+        @include tablet {
+            width: min-content;
+            padding-left: 0;
+        }
+    }
+}
+
 .band-title {
     display: flex;
     justify-content: left;

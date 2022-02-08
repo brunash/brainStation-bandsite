@@ -1,3 +1,51 @@
 @use './partials/global'as *;
 @use './partials/mixins'as *;
 @use './partials/variables'as *;
+
+.nav-bar__underline {
+    text-align: center;
+    width: 50%;
+    border-bottom: 5px solid transparent;
+    // margin-left: 8.2rem;
+
+    &--active {
+        text-align: center;
+        border-bottom: 5px solid #FFF;
+        width: 50vw;
+        color: $white-text;
+        padding-top: 1.5px;
+
+        @include tablet {
+            width: min-content;
+            padding-right: 0;
+            // margin-left: 4.5rem;
+        }
+    }
+}
+
+.nav-bar__options--list {
+    display: flex;
+    justify-content: flex-end;
+
+
+    @include tablet {
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 2rem;
+
+    background: linear-gradient(rgb(50, 50, 50, 0.5),
+            rgb(50, 50, 50, 0.5)),
+        url(../assets/images/hero-shows.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    color: $white-text;
+}
