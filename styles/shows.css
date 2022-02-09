@@ -220,7 +220,6 @@ a {
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
-    padding-right: 0;
   }
 }
 
@@ -239,10 +238,111 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  padding: 2rem;
+  align-self: center;
+  padding: 1rem;
   background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/hero-shows.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh;
+  height: 40%;
   color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .hero__album-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+.hero__title {
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 3.5rem;
+    width: 70%;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 2rem;
+    align-items: flex-start;
+  }
+}
+
+iframe {
+  border-radius: 6px;
+  height: 7.5rem;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  iframe {
+    width: 50%;
+  }
+}
+
+.shows {
+  margin: 0;
+}
+.shows__border {
+  border: 1px solid #E1E1E1;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .shows ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+  }
+}
+.shows ul li {
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .shows ul li {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shows {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+
+.shows__list-tickets {
+  background-color: #323232;
+  color: #FFFFFF;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .shows__list-date {
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shows__list-mid-items {
+    float: inline-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shows__list-small-screen {
+    display: none;
+  }
+}
+
+.shows__list-big-screen {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .shows__list-big-screen {
+    display: flex;
+  }
 }/*# sourceMappingURL=shows.css.map */
