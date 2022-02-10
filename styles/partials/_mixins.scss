@@ -1,7 +1,7 @@
 // @use './global'as *;
 
 $tablet-size: 768px;
-$desktop-size: 1024px;
+$desktop-size: 1280px;
 
 @mixin tablet {
     @media screen and (min-width: $tablet-size) {

@@ -50,14 +50,21 @@
     color: $white-text;
 
     &__album-name {
+        font-size: 1rem;
+        font-weight: 500;
+
         @include tablet {
             font-size: 1.5rem;
-            font-weight: 500;
+            line-height: 2.75rem;
+            font-weight: 700;
         }
     }
 
     &__title {
         width: 80%;
+        font-size: 2rem;
+        // line-height: 2rem;
+        font-weight: 700;
 
         @include tablet {
             font-size: 3.5rem;
@@ -85,11 +92,24 @@ iframe {
 }
 
 .shows {
-    // padding: 1rem;
-    // justify-content: left;
+    padding: 1rem;
     margin: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 
+    &__title {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 700;
 
+        @include tablet {
+            font-size: 2.25;
+            line-height: 2.75rem;
+            font-weight: 700;
+
+        }
+    }
 
     &__border {
         border: 1px solid $mercury;
@@ -97,6 +117,7 @@ iframe {
     }
 
     ul {
+        padding: 0;
 
         @include tablet {
             display: flex;
@@ -104,17 +125,21 @@ iframe {
             justify-content: space-around;
             padding: 0;
             width: 100%;
-            align-items: center;
+            align-items: flex-end;
+            // justify-content: baseline;
             // vertical-align: baseline;
             // height: auto;
             // width: auto;
         }
 
+        @include desktop {
+            width: 70%;
+            just
+        }
+
         li {
             list-style: none;
-
-
-
+            padding-bottom: 1.5rem;
 
             @include tablet {
                 width: auto;
@@ -137,21 +162,38 @@ iframe {
 }
 
 .shows__list-tickets {
+    text-align: center;
+    justify-content: center;
+    width: 70vw;
     background-color: $bandSite-black;
     color: $white;
-    padding: 0.7rem;
+    padding: 1.5rem 2rem 0.8rem 2rem;
     border-radius: 5px;
+    line-height: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    // font-family: "avenir-bold";
+    @include tablet {
+        padding: 1.5em 2rem 1.1rem 2rem;
+    }
 }
 
 .shows__list-date {
+    font-weight: 600;
+
     @include tablet {
-        font-weight: 600;
+        font-weight: 700;
     }
 }
 
 .shows__list-mid-items {
+    font-weight: 600;
+
     @include tablet {
         float: inline-start;
+        font-weight: 550;
+
     }
 }
 
@@ -167,4 +209,10 @@ iframe {
     @include tablet {
         display: flex;
     }
+}
+
+.shows__list--dvl {
+    color: $silver;
+    font-weight: 600;
+    font-size: 0.8rem;
 }
