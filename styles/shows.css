@@ -321,13 +321,11 @@ iframe {
     padding: 0;
     width: 100%;
     align-items: flex-end;
-    justify-content: baseline;
   }
 }
 @media screen and (min-width: 1280px) {
   .shows ul {
     width: 70%;
-    float: right;
   }
 }
 .shows ul li {
