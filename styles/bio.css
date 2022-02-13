@@ -203,6 +203,20 @@ a {
   }
 }
 
+.comments__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 100%;
+  background-color: #323232;
+  color: #FFFFFF;
+  border-radius: 5px;
+  line-height: 20px;
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -393,4 +407,131 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+input {
+  border-radius: 4px;
+  border: 1px solid #E1E1E1;
+  height: 2rem;
+  width: 90%;
+  background-color: #FAFAFA;
+}
+
+textarea {
+  border-radius: 4px;
+  border: 1px solid #E1E1E1;
+  height: 6rem;
+  width: 90%;
+  background-color: #FAFAFA;
+  resize: none;
+}
+
+input:active {
+  border: 1px solid #323232;
+}
+
+textarea:active {
+  border: 1px solid #323232;
+}
+
+::-moz-placeholder {
+  color: black;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+:-ms-input-placeholder {
+  color: black;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+::placeholder {
+  color: black;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+input:invalid {
+  background-color: pink;
+}
+
+.comments__container {
+  border-bottom: solid 2px #E1E1E1;
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 1280px) {
+  .comments__container {
+    justify-content: center;
+  }
+}
+
+.comments__button {
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .comments__button {
+    width: 30%;
+    position: relative;
+    left: 60%;
+  }
+}
+
+.comments__form {
+  width: 90%;
+}
+@media screen and (min-width: 1280px) {
+  .comments__form {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .comments__title {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__title {
+    padding-left: 8rem;
+  }
+}
+
+.comments {
+  width: 90%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .comments {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments {
+    margin-right: 5rem;
+  }
+}
+
+.comments__circle {
+  height: 3rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+h5 {
+  color: #AFAFAF;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.comments__round-logo {
+  margin-top: 2.5rem;
 }/*# sourceMappingURL=bio.css.map */

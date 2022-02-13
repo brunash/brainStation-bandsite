@@ -17,7 +17,7 @@
             </div>
             <div class="nav-bar__options">
                 <ul class="nav-bar__options--list">
-                    <li class="nav-bar__underline"> <a href="">
+                    <li class="nav-bar__underline"> <a href="../index.html">
                             Biography </a></li>
                     <li class="nav-bar__underline nav-bar__underline--active"> <a href="./pages/shows.html">
                             Shows </a></li>
@@ -26,92 +26,36 @@
         </nav>
     </header>
     <main class="hero">
-        <h2 class="hero__album-name">Beautiful Beasts Album</h2>
-        <h1 class="hero__title">Queen of Yellow x For the Stings</h1>
+        <div>
+            <h2 class="hero__album-name">Beautiful Beasts Album</h2>
+            <h1 class="hero__title">Queen of Yellow x For the Stings</h1>
+        </div>
+
         <iframe width="100%" height="30%" scrolling="no" frameborder="no" allow="autoplay"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1166994481&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-        <!-- <div
-            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-            <a href="https://soundcloud.com/colorize-enhanced" title="Colorize" target="_blank"
-                style="color: #cccccc; text-decoration: none;">Colorize</a> · <a
-                href="https://soundcloud.com/colorize-enhanced/djimboh-yours" title="djimboh - Yours" target="_blank"
-                style="color: #cccccc; text-decoration: none;">djimboh - Yours</a></div> -->
-
     </main>
 
     <article class="shows">
         <h2 class="shows__title">Shows</h2>
-        <ul class="shows__list-big-screen">
-            <li class="shows__list--dvl">DATE</li>
-            <li class="shows__list--mid-items shows__list--dvl">VENUE</li>
-            <li class="shows__list--mid-items shows__list--dvl">LOCATION</li>
-            <li></li>
-        </ul>
-        <!-- <hr class="shows__border shows__border--big-screen"> -->
-        <ul>
-            <li class="shows__list-small-screen shows__list--dvl">DATE</li>
-            <li class="shows__list-date">Mon Sept 06 2021</li>
-            <li class="shows__list-small-screen shows__list--dvl">VENUE</li>
-            <li class="shows__list-mid-items">Ronald Lane</li>
-            <li class="shows__list-small-screen shows__list--dvl">LOCATION</li>
-            <li class="shows__list-mid-items">San Francisco, CA</li>
-            <li class="shows__list-tickets">BUY TICKETS</li>
-        </ul>
-        <hr class="shows__border">
-        <ul>
-            <li class="shows__list-small-screen shows__list--dvl">DATE</li>
-            <li class="shows__list-date">Tue Sept 21 2021</li>
-            <li class="shows__list-small-screen shows__list--dvl">VENUE</li>
-            <li class="shows__list-mid-items">Pier 3 East</li>
-            <li class="shows__list-small-screen shows__list--dvl">LOCATION</li>
-            <li class="shows__list-mid-items">San Francisco, CA</li>
-            <li class="shows__list-tickets">BUY TICKETS</li>
-        </ul>
-        <hr class="shows__border">
-        <ul>
-            <li class="shows__list-small-screen shows__list--dvl">DATE</li>
-            <li class="shows__list-date">Fri Oct 15 2021 </li>
-            <li class="shows__list-small-screen shows__list--dvl">VENUE</li>
-            <li class="shows__list-mid-items">View Lounge</li>
-            <li class="shows__list-small-screen shows__list--dvl">LOCATION</li>
-            <li class="shows__list-mid-items">San Francisco, CA</li>
-            <li class="shows__list-tickets">BUY TICKETS</li>
-        </ul>
-        <hr class="shows__border">
-        <ul>
-            <li class="shows__list-small-screen shows__list--dvl">DATE</li>
-            <li class="shows__list-date">Sat Nov 06 2021</li>
-            <li class="shows__list-small-screen shows__list--dvl">VENUE</li>
-            <li class="shows__list-mid-items">Hyatt Agency</li>
-            <li class="shows__list-small-screen shows__list--dvl">LOCATION</li>
-            <li class="shows__list-mid-items">San Francisco, CA</li>
-            <li class="shows__list-tickets">BUY TICKETS</li>
-        </ul>
-        <hr class="shows__border">
-        <ul>
-            <li class="shows__list-small-screen shows__list--dvl">DATE</li>
-            <li class="shows__list-date">Fri Nov 26 2021</li>
-            <li class="shows__list-small-screen shows__list--dvl">VENUE</li>
-            <li class="shows__list-mid-items">Moscow Center</li>
-            <li class="shows__list-small-screen shows__list--dvl">LOCATION</li>
-            <li class="shows__list-mid-items">San Francisco, CA</li>
-            <li class="shows__list-tickets">BUY TICKETS</li>
-        </ul>
-        <hr class="shows__border">
-        <ul>
-            <li class="shows__list-small-screen shows__list--dvl">DATE</li>
-            <li class="shows__list-date">Wed Dec 15 2021</li>
-            <li class="shows__list-small-screen shows__list--dvl">VENUE</li>
-            <li class="shows__list-mid-items">Press Club</li>
-            <li class="shows__list-small-screen shows__list--dvl">LOCATION</li>
-            <li class="shows__list-mid-items">San Francisco, CA</li>
-            <li class="shows__list-tickets">BUY TICKETS</li>
-        </ul>
-        <hr class="shows__border">
+        <h2 class="shows__title--desktop">Shows</h2>
+        <div class="shows__list-container">
+            <ul id="shows__list-big-screen">
+                <li class="shows__list--dvl">DATE</li>
+                <li class="shows__list--mid-items shows__list--dvl">VENUE</li>
+                <li class="shows__list--mid-items shows__list--dvl">LOCATION</li>
+                <li></li>
+            </ul>
+            <!-- <hr class="shows__border"> -->
+            <ul class="shows__list">
+
+                <a href="./shows.html">
+
+                </a>
+
+
+            </ul>
+        </div>
     </article>
-
-
-
     <footer class="contact">
         <div class="contact__social">
             <div class="contact__social--title">
@@ -120,7 +64,7 @@
                 <a href="https://www.facebook.com/"><img src="../assets/icons/Icon-facebook.svg" alt="Facebook"></a>
                 <a href="https://twitter.com/"><img src="../assets/icons/Icon-twitter.svg" alt="Twitter"></a>
             </div>
-            <a href="./index.html"><img src="../assets/logos/Logo-bandsite.svg" alt="Band Site"
+            <a href="../index.html"><img src="../assets/logos/Logo-bandsite.svg" alt="Band Site"
                     class="contact__social--bandsite-logo"></a>
         </div>
         <div class="contact__people">
@@ -171,7 +115,7 @@
             </div>
         </div>
         <div class="contact__band-title">
-            <img src="../assets/logos/Logo-bandsite.svg" alt="">
+            <a href="../index.html"><img src="../assets/logos/Logo-bandsite.svg" alt="Band Site logo"></a>
         </div>
         <div class="contact__copyright">
             <p>Copyright The Bees Knees © 2021 All Rights Reserved</p>

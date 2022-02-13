@@ -30,9 +30,6 @@ body {
 }
 
 h2 {
-    // font-size: 1.5rem;
-    // line-height: 2rem;
-    // font-weight: 700;
     font-size: 2rem;
     line-height: 2rem;
     font-weight: 700;
@@ -110,28 +107,6 @@ a {
         }
     }
 }
-
-// .nav-bar__underline {
-//     text-align: center;
-//     width: 50%;
-//     border-bottom: 5px solid transparent;
-
-//     &--active {
-//         text-align: center;
-//         border-bottom: 5px solid #FFF;
-//         width: 50vw;
-//         color: $white-text;
-//         padding-top: 1.5px;
-
-//         @include tablet {
-//             width: min-content;
-//             padding-left: 0;
-//         }
-//     }
-// }
-
-
-
 
 .contact {
     padding: 1.5rem 1rem 1.5rem 1rem;
@@ -250,4 +225,19 @@ a {
     @include tablet {
         visibility: hidden;
     }
+}
+
+
+.comments__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 100%;
+    background-color: $bandSite-black;
+    color: $white;
+    border-radius: 5px;
+    line-height: 20px;
+    font-size: 1.1rem;
+    font-weight: 550;
 }
