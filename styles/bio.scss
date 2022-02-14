@@ -207,8 +207,8 @@ input {
     border: 1px solid $mercury;
     height: 2rem;
     width: 90%;
-    // padding: 0.4rem;
     background-color: $alabaster;
+    font-size: 1rem;
 }
 
 textarea {
@@ -216,9 +216,9 @@ textarea {
     border: 1px solid $mercury;
     height: 6rem;
     width: 90%;
-    // padding: 0.4rem;
     background-color: $alabaster;
     resize: none;
+    font-size: 1rem;
 }
 
 input:active {
@@ -232,71 +232,11 @@ textarea:active {
 ::placeholder {
     color: black;
     font-size: 1rem;
-    padding: 0.4rem;
+
 }
 
 input:invalid {
     background-color: pink;
-}
-
-.comments__container {
-    border-bottom: solid 2px $mercury;
-    display: flex;
-    flex-direction: row;
-    width: 85%;
-    padding-bottom: 1rem;
-
-    @include desktop {
-        justify-content: center;
-    }
-}
-
-.comments__added {
-    width: 90%;
-
-    @include desktop {
-        width: 50%;
-    }
-}
-
-.comments__button {
-    width: 90%;
-
-    @include tablet {
-        width: 30%;
-        position: relative;
-        left: 60%;
-    }
-}
-
-.comments__form {
-    width: 90%;
-
-    @include desktop {
-        width: 50%;
-    }
-}
-
-.comments__title {
-    @include tablet {
-        width: 100%;
-    }
-
-    @include desktop {
-        padding-left: 8rem;
-    }
-}
-
-.comments__posted-container {
-    border-bottom: solid 2px $mercury;
-    display: flex;
-    flex-direction: row;
-    width: 85%;
-    padding-bottom: 1rem;
-
-    @include desktop {
-        justify-content: center;
-    }
 }
 
 .comments {
@@ -309,16 +249,105 @@ input:invalid {
 
     @include tablet {
         justify-content: flex-start;
-
     }
 
     @include desktop {
         margin-right: 5rem;
     }
+
+    &__circle {
+        height: 2.5em;
+        width: 3rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+        margin-top: 2.5rem;
+        background-color: $mercury;
+    }
+
+    &__grey-round-logo {
+        height: 2.5em;
+        width: 3rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+        margin-top: 2.5rem;
+        background-color: $mercury;
+    }
+
+    &__added {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            width: 50%;
+        }
+    }
+
+    &__wrap {
+        width: 85%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        @include tablet {
+            width: 100%
+        }
+
+        @include desktop {}
+    }
+
+    &__container {
+        border-bottom: solid 2px $mercury;
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        padding-bottom: 1rem;
+
+        @include desktop {
+            justify-content: center;
+        }
+    }
+
+    &__posted-container {
+        border-bottom: solid 2px $mercury;
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        padding-bottom: 1rem;
+
+        @include desktop {
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        @include tablet {
+            width: 100%;
+        }
+
+        @include desktop {
+            padding-left: 8rem;
+        }
+    }
+
+    &__form {
+        width: 90%;
+
+        @include desktop {
+            width: 50%;
+        }
+    }
+
+    &__button {
+        width: 90%;
+
+        @include tablet {
+            width: 30%;
+            position: relative;
+            left: 60%;
+        }
+    }
 }
-
-
-
 
 h5 {
     color: $silver;
@@ -327,45 +356,8 @@ h5 {
     margin-bottom: 0;
 }
 
-.comments__circle {
-    height: 2.5em;
-    width: 3rem;
-    border-radius: 50%;
-    // clip-path: circle();
-    margin-right: 1rem;
-    margin-top: 2.5rem;
-    background-color: $mercury;
-}
-
-.comments__grey-round-logo {
-    height: 2.5em;
-    width: 3rem;
-    border-radius: 50%;
-    margin-right: 1rem;
-    margin-top: 2.5rem;
-    background-color: $mercury;
-}
-
-.comments__added {
-    display: flex;
-    flex-direction: column;
-}
-
 .name-date {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.comments__wrap {
-    width: 85%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-
-    @include tablet {
-        width: 100%
-    }
-
-    @include desktop {}
 }
