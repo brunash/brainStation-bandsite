@@ -13,13 +13,14 @@
     <header class="header">
         <nav class="nav-bar">
             <div class="nav-bar__title">
-                <a href="./index.html"><img src="./assets/logos/Logo-bandsite.svg" alt="" class="bandsite-logo"></a>
+                <a href="./index.html"><img src="./assets/logos/Logo-bandsite.svg" alt="Logo of the band"
+                        class="bandsite-logo"></a>
             </div>
             <div class="nav-bar__options">
                 <ul class="nav-bar__options--list">
                     <li class="nav-bar__underline--active"> <a href="">
                             Biography </a></li>
-                    <li class="nav-bar__underline"> <a href="">
+                    <li class="nav-bar__underline"> <a href="./pages/shows.html">
                             Shows </a></li>
                 </ul>
             </div>
@@ -84,18 +85,43 @@
             <h2>Photo Gallery</h2>
         </div>
         <div class="gallery__grid">
-            <img src="./assets/images/Photo-gallery-1.jpg" alt="picture1">
-            <img src="./assets/images/Photo-gallery-2.jpg" alt="picture2">
-            <img src="./assets/images/Photo-gallery-3.jpg" alt="picture3">
-            <img src="./assets/images/Photo-gallery-4.jpg" alt="picture4">
-            <img src="./assets/images/Photo-gallery-5.jpg" alt="picture5">
-            <img src="./assets/images/Photo-gallery-6.jpg" alt="picture6">
-            <img src="./assets/images/Photo-gallery-7.jpg" alt="picture7">
-            <img src="./assets/images/Photo-gallery-8.jpg" alt="picture8">
-            <img src="./assets/images/Photo-gallery-9.jpg" alt="picture9">
+            <img src="./assets/images/Photo-gallery-1.jpg" alt="People dancing">
+            <img src="./assets/images/Photo-gallery-2.jpg" alt="A girl enjoying the concert">
+            <img src="./assets/images/Photo-gallery-3.jpg" alt="Hands up">
+            <img src="./assets/images/Photo-gallery-4.jpg" alt="Girl with her hands up">
+            <img src="./assets/images/Photo-gallery-5.jpg" alt="Concert effects">
+            <img src="./assets/images/Photo-gallery-6.jpg" alt="Lead singer performing">
+            <img src="./assets/images/Photo-gallery-7.jpg" alt="Light effects at the concert">
+            <img src="./assets/images/Photo-gallery-8.jpg" alt="Dj mixing the music">
+            <img src="./assets/images/Photo-gallery-9.jpg" alt="Confetti flying">
         </div>
     </figure>
+    <main class="comments">
+        <div class="comments__title">
+            <h2>Join the Conversation</h2>
+        </div>
+        <div class="comments__container">
+            <div class="comments__round-logo">
+                <img src="./assets/images/Mohan-muruge.jpg" alt="Lead singer face" class="comments__circle">
+            </div>
+            <form action="submit" class="comments__form">
+                <label for="comments__name-input">
+                    <h5>Name</h5><input type="text" placeholder="Enter your name" class="comments__name-input"
+                        name="name">
+                </label>
+                <label for="comments__comment-input">
+                    <h5>Comment</h5>
+                    <textarea name="comment" id="" cols="20" rows="5" placeholder="Add a new comment"
+                        class="comments__comment-input"></textarea>
+                </label>
+                <button type="submit" class="comments__button">COMMENT</button>
 
+            </form>
+        </div>
+        <div class="comments__wrap">
+
+        </div>
+    </main>
     <footer class="contact">
         <div class="contact__social">
             <div class="contact__social--title">
@@ -104,7 +130,7 @@
                 <a href="https://www.facebook.com/"><img src="./assets/icons/Icon-facebook.svg" alt="Facebook"></a>
                 <a href="https://twitter.com/"><img src="./assets/icons/Icon-twitter.svg" alt="Twitter"></a>
             </div>
-            <a href="./index.html"><img src="./assets/logos/Logo-bandsite.svg" alt="Band Site"
+            <a href="./index.html"><img src="./assets/logos/Logo-bandsite.svg" alt="Band Site logo"
                     class="contact__social--bandsite-logo"></a>
         </div>
         <div class="contact__people">
@@ -155,12 +181,13 @@
             </div>
         </div>
         <div class="contact__band-title">
-            <img src="./assets/logos/Logo-bandsite.svg" alt="">
+            <a href="./index.html"><img src="./assets/logos/Logo-bandsite.svg" alt="Band Site Logo"></a>
         </div>
         <div class="contact__copyright">
             <p>Copyright The Bees Knees © 2021 All Rights Reserved</p>
         </div>
     </footer>
+    <script src="./scripts/index-page.js"></script>
 </body>
 
 </html>
