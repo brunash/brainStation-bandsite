@@ -1,27 +1,26 @@
 @use './variables'as *;
 @use './mixins'as *;
+@use './font'as *;
 
-@font-face {
-    font-family: "avenir-regular";
-    src: url("../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
-}
+// @font-face {
+//     font-family: "avenir-regular";
+//     src: url("../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+// }
 
-@font-face {
-    font-family: "avenir-demi";
-    src: url("../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
-}
+// @font-face {
+//     font-family: "avenir-demi";
+//     src: url("../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+// }
 
-@font-face {
-    font-family: "avenir-bold";
-    src: url("../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
-}
+// @font-face {
+//     font-family: "avenir-bold";
+//     src: url("../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+// }
 
 
 
 html {
-    font-family: "avenir-regular",
-        "avenir-demi",
-        "avenir-bold";
+    font-family: "avenir";
 }
 
 body {
@@ -32,7 +31,7 @@ body {
 h2 {
     font-size: 2rem;
     line-height: 2rem;
-    font-weight: 700;
+    // font-weight: 700;
 }
 
 .bandsite-logo {
@@ -203,7 +202,7 @@ a {
     &__people-wrap--email {
         padding: 0.5rem 0 0.5rem 0;
         line-height: 5px;
-        font-weight: 100;
+        // font-weight: 100;
 
         @include desktop {
             font-size: 0.85rem;
@@ -239,5 +238,5 @@ a {
     border-radius: 5px;
     line-height: 20px;
     font-size: 1.1rem;
-    font-weight: 550;
+    // font-weight: 550;
 }
