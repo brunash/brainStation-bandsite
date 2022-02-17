@@ -35,7 +35,8 @@ function displayComment(arr) {
     let nameUser = document.createElement("h4");
     nameUser.innerText = arr.name;
 
-    let dateUser = document.createElement("h5");
+    let dateUser = document.createElement("p");
+    dateUser.classList.add("comments__added-date")
     dateUser.innerText = arr.date;
 
     let commentUser = document.createElement("p");
