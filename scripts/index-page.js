@@ -1,3 +1,9 @@
+let url = 'https://project-1-api.herokuapp.com/'
+const apiKey = "5a8c33e6-d2b3-4989-a443-2176585db786"
+
+
+// get /comments
+
 let commentArray = [
     {
     date: "12/20/2020",
