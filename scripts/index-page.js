@@ -1,29 +1,40 @@
-let url = 'https://project-1-api.herokuapp.com/'
+let showUrl = 'https://project-1-api.herokuapp.com/comments'
 const apiKey = "5a8c33e6-d2b3-4989-a443-2176585db786"
+let inputComment = document.querySelector(".comments__wrap");
 
-
-// get /comments
+axios
+.get(showUrl + "?api_key=" + apiKey)
+.then((response) => {
+    commentArray = response.data;
+    commentArray.forEach((commentContainer) => {
+    displayComment(commentContainer);
+    console.log("something")
+})
+})
+.catch(error => {
+    console.log(error);
+})
 
 let commentArray = [
-    {
-    date: "12/20/2020",
-    name: "Miles Acosta",
-    comment: "I can t stop listening. Every time I hear one of their songs the vocals it givesme goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can t get enough."
-    },
-    {
-    date: "01/09/2021",
-    name: "Emilie Beach",
-    comment: "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day."
-    },{
-    date: "02/17/2021",
-    name: "Connor Walton",
-    comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains."
-    }
+    // {
+    // date: "12/20/2020",
+    // name: "Miles Acosta",
+    // comment: "I can t stop listening. Every time I hear one of their songs the vocals it givesme goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can t get enough."
+    // },
+    // {
+    // date: "01/09/2021",
+    // name: "Emilie Beach",
+    // comment: "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day."
+    // },{
+    // date: "02/17/2021",
+    // name: "Connor Walton",
+    // comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains."
+    // }
     
     
 ];
 
-let inputComment = document.querySelector(".comments__wrap");
+
 
 function displayComment(arr) {
     let commentContainer = document.createElement("div");
@@ -43,7 +54,8 @@ function displayComment(arr) {
 
     let dateUser = document.createElement("p");
     dateUser.classList.add("comments__added-date")
-    dateUser.innerText = arr.date;
+    // dateUser.innerText = ;
+    dateUser.innerText = new Date(Number(arr.timestamp)).toLocaleDateString();
 
     let commentUser = document.createElement("p");
     commentUser.innerText = arr.comment;
@@ -79,7 +91,7 @@ formComment.addEventListener('submit', (event) => {
       commentArray.unshift({
           name: nameInput,
           comment: commentInput,
-          date: today.toLocaleDateString("en-US"),
+          date: today.toLocaleDateString(),
       })
    
     displayComment(commentArray[0])
