@@ -276,8 +276,16 @@ iframe {
         background-color: $mercury;
         transition: 0.25s;
     }
+
+    // &__table--active {
+    //     background-color: $mercury;
+    // }
 }
 
 #shows__list-big-screen>li {
     width: 9rem;
+}
+
+.shows__table--active {
+    background-color: $mercury;
 }

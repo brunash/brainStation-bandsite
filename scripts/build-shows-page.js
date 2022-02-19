@@ -41,9 +41,9 @@ function displayShows(arr) {
 
         let button = document.createElement('button');
         button.innerText = "Buy Tickets";
-        button.addEventListener('click', () => {
-            console.log("hit")
-        })
+        // button.addEventListener('click', () => {
+        //     console.log("hit")
+        // })
         
                
 
@@ -58,3 +58,12 @@ function displayShows(arr) {
         show.appendChild(locationName);
         show.appendChild(button);
      }
+
+  
+// let listItem = document.querySelectorAll(".shows__table")
+// listItem.addEventListener('click', () => {
+//     listItem.classList.toggle("shows__table--active")
+// })
+     
+
+
