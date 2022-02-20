@@ -188,9 +188,7 @@ iframe {
             flex-direction: row;
             width: 100%;
             justify-content: space-between;
-
         }
-
     }
 
     &__list-container {
@@ -203,7 +201,7 @@ iframe {
         }
     }
 
-    button {
+    &__button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -221,11 +219,10 @@ iframe {
         }
     }
 
-    h5 {
+    &__heading--small {
         color: $silver;
         font-weight: 600;
         font-size: 0.9rem;
-
 
         @include tablet {
             display: none;
@@ -234,6 +231,9 @@ iframe {
 
     &__table {
         padding: 0;
+        width: 100%;
+        border-bottom: solid 2px $mercury;
+        padding-bottom: 1rem;
 
         @include tablet {
             display: flex;
@@ -254,32 +254,35 @@ iframe {
         margin-right: 10rem;
     }
 
-    &__list>li>p {
+    &__venue-location {
         width: 11rem;
     }
 
-    &__list>li>h3 {
-        width: 11rem;
-    }
-
-    &__list>li {
-        width: 100%;
-        border-bottom: solid 2px $mercury;
-        padding-bottom: 1rem;
-    }
-
-    &__list>a {
-        width: 100;
-    }
-
-    &__list>li:active {
-        background-color: $mercury;
-        transition: 0.25s;
-    }
-
-    // &__table--active {
-    //     background-color: $mercury;
+    // &__list>li>p {
+    //     width: 11rem;
     // }
+    &shows__date {
+        width: 11rem;
+    }
+
+    // &__list>li>h3 {
+    //     width: 11rem;
+    // }
+
+    // &__list>li {
+    //     width: 100%;
+    //     border-bottom: solid 2px $mercury;
+    //     padding-bottom: 1rem;
+    // }
+
+    // &__list>li:active {
+    //     background-color: $mercury;
+    //     transition: 0.25s;
+    // }
+
+    &__table--active {
+        background-color: $mercury;
+    }
 }
 
 #shows__list-big-screen>li {

@@ -56,7 +56,7 @@ commentArray.forEach((commentContainer) => {
     displayComment(commentContainer);
 })
 
-console.log(commentArray)
+
 
 let formComment = document.querySelector(".comments__form")
 let today = new Date();
@@ -70,6 +70,8 @@ formComment.addEventListener('submit', (event) => {
     .post(showUrl + "?api_key=" + apiKey, {
         name: nameInput,
         comment: commentInput,
+        // timestamp: today.toLocaleDateString(),
+        
     })
     .then((response) => {
         axios
@@ -80,16 +82,16 @@ formComment.addEventListener('submit', (event) => {
             commentContainer(comments);
             
             })
-            console.log(response)
+            
     })
     .catch((error) => {
-        console.log(error);
+        
 });
     if (nameInput && commentInput) {
       commentArray.unshift({
           name: nameInput,
           comment: commentInput,
-          date: today.toLocaleDateString(),
+        //   date: today.toLocaleDateString(),
       })
    
     displayComment(commentArray[0])
