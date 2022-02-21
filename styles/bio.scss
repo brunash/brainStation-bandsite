@@ -89,8 +89,6 @@ h2 {
     }
 
     &__title {
-
-
         @include desktop {
             padding-left: 5rem;
             font-size: 4rem;
@@ -172,24 +170,6 @@ h2 {
         padding: 1.5rem 5rem 1.5rem 5rem;
     }
 
-    // img {
-    //     width: 100%;
-    //     height: auto;
-    //     padding-top: 1rem;
-
-    //     @include tablet {
-    //         display: grid;
-    //         width: 30%;
-    //         padding: 1rem 0.5rem 1rem 0.5rem;
-
-    //     }
-
-    //     @include desktop {
-    //         width: 30%;
-    //         padding: auto;
-    //     }
-    // }
-
     &__photo {
         width: 100%;
         height: auto;
@@ -199,7 +179,6 @@ h2 {
             display: grid;
             width: 30%;
             padding: 1rem 0.5rem 1rem 0.5rem;
-
         }
 
         @include desktop {
@@ -218,42 +197,9 @@ h2 {
     }
 }
 
-
-// input {
-//     border-radius: 4px;
-//     border: 1px solid $mercury;
-//     height: 2rem;
-//     width: 90%;
-//     background-color: $alabaster;
-//     font-size: 1rem;
-// }
-
-// textarea {
-//     border-radius: 4px;
-//     border: 1px solid $mercury;
-//     height: 6rem;
-//     width: 90%;
-//     background-color: $alabaster;
-//     resize: none;
-//     font-size: 1rem;
-// }
-
-input:active {
-    border: 1px solid $bandSite-black;
-}
-
-textarea:active {
-    border: 1px solid $bandSite-black;
-}
-
 ::placeholder {
     color: black;
     font-size: 1rem;
-
-}
-
-input:invalid {
-    background-color: pink;
 }
 
 .comments {
@@ -322,6 +268,10 @@ input:invalid {
         font-size: 1rem;
     }
 
+    &__name-input:active {
+        border: 1px solid $bandSite-black;
+    }
+
     &__comment-input {
         border-radius: 4px;
         border: 1px solid $mercury;
@@ -330,6 +280,10 @@ input:invalid {
         background-color: $alabaster;
         resize: none;
         font-size: 1rem;
+    }
+
+    &__comment-input:active {
+        border: 1px solid $bandSite-black;
     }
 
     &__container {
@@ -397,16 +351,10 @@ input:invalid {
         margin-bottom: 0;
         font-weight: bold;
     }
-}
 
-// h5 {
-//     color: $silver;
-//     font-size: 0.9rem;
-//     margin-bottom: 0;
-// }
-
-.name-date {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    &__name-date {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

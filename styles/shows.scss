@@ -78,11 +78,11 @@ li {
         border: none;
 
         @include tablet {
-            width: 50%;
+            width: 65%;
         }
 
         @include desktop {
-            width: 25%;
+            width: 40%;
             padding: 0 15% 0 15%;
         }
     }
@@ -100,31 +100,16 @@ li {
     }
 }
 
-
-
-
-// iframe {
-//     border-radius: 6px;
-//     height: 7.5rem;
-//     border: none;
-
-//     @include tablet {
-//         width: 50%;
-//     }
-
-//     @include desktop {
-//         width: 25%;
-//         padding: 0 15% 0 15%;
-//     }
-
-// }
-
 .shows {
     padding: 1rem;
     margin: 0;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+
+    @include tablet {
+        padding: 2rem;
+    }
 
     @include desktop {
         flex-direction: row;
@@ -187,6 +172,10 @@ li {
         color: $silver;
         font-weight: 600;
         font-size: 0.8rem;
+    }
+
+    &__table--active {
+        background-color: $mercury;
     }
 
     &__table:hover {
@@ -273,9 +262,6 @@ li {
         width: 11rem;
     }
 
-    // &__list>li>p {
-    //     width: 11rem;
-    // }
     &shows__date {
         width: 11rem;
     }
@@ -283,28 +269,8 @@ li {
     &__list>li>h3 {
         width: 11rem;
     }
-
-    // &__list>li {
-    //     width: 100%;
-    //     border-bottom: solid 2px $mercury;
-    //     padding-bottom: 1rem;
-    // }
-
-    // &__list>li:active {
-    //     background-color: $mercury;
-    //     transition: 0.25s;
-    // }
-
-    &__table--active {
-        background-color: $mercury;
-    }
 }
 
 #shows__list-big-screen>li {
     width: 9rem;
-}
-
-.shows__table--active {
-    // background-color: $mercury;
-    color: purple;
 }

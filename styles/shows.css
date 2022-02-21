@@ -295,12 +295,12 @@ li {
 }
 @media screen and (min-width: 768px) {
   .hero__song {
-    width: 50%;
+    width: 65%;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__song {
-    width: 25%;
+    width: 40%;
     padding: 0 15% 0 15%;
   }
 }
@@ -323,6 +323,11 @@ li {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .shows {
+    padding: 2rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   .shows {
@@ -386,6 +391,9 @@ li {
   color: #AFAFAF;
   font-weight: 600;
   font-size: 0.8rem;
+}
+.shows__table--active {
+  background-color: #E1E1E1;
 }
 .shows__table:hover {
   background-color: #FAFAFA;
@@ -474,14 +482,7 @@ li {
 .shows__list > li > h3 {
   width: 11rem;
 }
-.shows__table--active {
-  background-color: #E1E1E1;
-}
 
 #shows__list-big-screen > li {
   width: 9rem;
-}
-
-.shows__table--active {
-  color: purple;
 }/*# sourceMappingURL=shows.css.map */

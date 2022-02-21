@@ -8,11 +8,9 @@ axios
     commentArray = response.data;
     commentArray.forEach((commentContainer) => {
     displayComment(commentContainer);
-    console.log("something")
 })
 })
 .catch(error => {
-    console.log(error);
 })
 
 let commentArray = [];
@@ -28,7 +26,7 @@ function displayComment(arr) {
     addedComments.classList.add("comments__added");
     
     let nameDate = document.createElement("div");
-    nameDate.classList.add("name-date");
+    nameDate.classList.add("comments__name-date");
 
     let nameUser = document.createElement("h4");
     nameUser.innerText = arr.name;
@@ -55,7 +53,6 @@ commentArray.forEach((commentContainer) => {
 
 let formComment = document.querySelector(".comments__form")
 let today = new Date();
-console.log(today)
 
 formComment.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -74,7 +71,7 @@ formComment.addEventListener('submit', (event) => {
             let comments = response.data;
             })
      })
-    .catch((error) => {       
+    .catch((error) => {     
 });
     if (nameInput && commentInput) {
       commentArray.unshift({
