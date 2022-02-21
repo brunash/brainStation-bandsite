@@ -23,6 +23,10 @@ function displayShows(arr) {
         
         let show = document.createElement("li")
         show.classList.add("shows__table")
+        // show.addEventListener( "click",(event) => {
+        // show.classList.toggle("shows__table--active");
+        // console.log("clicked", show)
+    // })
 
         let dateHeading = document.createElement('h5');
         dateHeading.classList.add("shows__heading--small")
@@ -65,13 +69,29 @@ function displayShows(arr) {
         show.appendChild(button);
      }
 
+// 8th try
+// document.querySelectorAll('shows__table').addEventListener('click', result);
+
+// function result() {
+//     // let changeColor = document.querySelectorAll('shows__table');
+//     // changeColor.classList.toggle('shows__list--active')
+
+//     let changeColor = document.querySelectorAll('shows__table');
+
+//     for(let x of changeColor) {
+//         x.classList.toggle('shows__list--active');
+//     }
+// }
+
+// let n = document.querySelectorAll("shows__table")
+// n.addEventListener('click',() => {
+//         n.classList.toggle("shows__table--active");  
+//         } )
 // first option:
 // let listItem = document.querySelectorAll(".shows__table");
-
-
-// listItem.addEventListener('click', (e) => {
-    
-//     listItem.classList.toggle(".shows__table--active")
+// listItem.addEventListener('click', () => {
+//  listItem.classList.toggle("shows__table--active"),
+//       console.log("click")
 // })
 
 //second option :
@@ -85,15 +105,24 @@ function displayShows(arr) {
 // listItem.forEach((listItem) => {
 //     listItem.addEventListener('click', (e) => {
 //         listItem.classList.toggle(".shows__table--active")
+//         console.log("clicked")
 //     })
 // })
 
 // 4th option
 // let listItem = document.querySelectorAll(".shows__table");
+// function toggleClass(listItem) {
 //   for (let i = 0; i < listItem.length; i++) {
-//     listItem[i].addEventListener('dblclick', function (e) {
+//     listItem[i].addEventListener('click', function (e) {
 //       e.preventDefault();
 //       listItem[i].classList.toggle("shows__table--active");
 //       console.log("clicked");
 //     });
+//   }}
+//5th
+
+// let listItem = document.querySelectorAll(".shows__table");
+// listItem.addEventListener('click', changeColor, false)
+// function changeColor(e) {
+//     listItem.classList.toggle('shows__table--active')
 // }

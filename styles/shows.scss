@@ -72,6 +72,21 @@ li {
         }
     }
 
+    &__song {
+        border-radius: 6px;
+        height: 7.5rem;
+        border: none;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        @include desktop {
+            width: 25%;
+            padding: 0 15% 0 15%;
+        }
+    }
+
     &__title {
         width: 80%;
         font-size: 2rem;
@@ -88,21 +103,21 @@ li {
 
 
 
-iframe {
-    border-radius: 6px;
-    height: 7.5rem;
-    border: none;
+// iframe {
+//     border-radius: 6px;
+//     height: 7.5rem;
+//     border: none;
 
-    @include tablet {
-        width: 50%;
-    }
+//     @include tablet {
+//         width: 50%;
+//     }
 
-    @include desktop {
-        width: 25%;
-        padding: 0 15% 0 15%;
-    }
+//     @include desktop {
+//         width: 25%;
+//         padding: 0 15% 0 15%;
+//     }
 
-}
+// }
 
 .shows {
     padding: 1rem;
@@ -265,9 +280,9 @@ iframe {
         width: 11rem;
     }
 
-    // &__list>li>h3 {
-    //     width: 11rem;
-    // }
+    &__list>li>h3 {
+        width: 11rem;
+    }
 
     // &__list>li {
     //     width: 100%;
@@ -290,5 +305,6 @@ iframe {
 }
 
 .shows__table--active {
-    background-color: $mercury;
+    // background-color: $mercury;
+    color: purple;
 }

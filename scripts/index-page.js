@@ -17,8 +17,6 @@ axios
 
 let commentArray = [];
 
-
-
 function displayComment(arr) {
     let commentContainer = document.createElement("div");
     commentContainer.classList.add("comments__posted-container");
@@ -49,17 +47,15 @@ function displayComment(arr) {
     addedComments.appendChild(commentUser);
     nameDate.appendChild(nameUser);
     nameDate.appendChild(dateUser);
-
 }
 
 commentArray.forEach((commentContainer) => {
     displayComment(commentContainer);
 })
 
-
-
 let formComment = document.querySelector(".comments__form")
 let today = new Date();
+console.log(today)
 
 formComment.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -69,30 +65,23 @@ formComment.addEventListener('submit', (event) => {
     axios
     .post(showUrl + "?api_key=" + apiKey, {
         name: nameInput,
-        comment: commentInput,
-        // timestamp: today.toLocaleDateString(),
-        
+        comment: commentInput,    
     })
     .then((response) => {
         axios
         .get(showUrl + "?api_key=" + apiKey)
-        .then((response) => {
+        .then((response) => {     
             let comments = response.data;
-            comments.innerText ="";
-            commentContainer(comments);
-            
             })
-            
-    })
-    .catch((error) => {
-        
+     })
+    .catch((error) => {       
 });
     if (nameInput && commentInput) {
       commentArray.unshift({
           name: nameInput,
           comment: commentInput,
-        //   date: today.toLocaleDateString(),
-      })
+          timestamp: today,
+         })
    
     displayComment(commentArray[0])
     }

@@ -288,6 +288,22 @@ li {
     font-weight: 700;
   }
 }
+.hero__song {
+  border-radius: 6px;
+  height: 7.5rem;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__song {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__song {
+    width: 25%;
+    padding: 0 15% 0 15%;
+  }
+}
 .hero__title {
   width: 80%;
   font-size: 2rem;
@@ -298,23 +314,6 @@ li {
     font-size: 3.5rem;
     width: 70%;
     margin-top: 0;
-  }
-}
-
-iframe {
-  border-radius: 6px;
-  height: 7.5rem;
-  border: none;
-}
-@media screen and (min-width: 768px) {
-  iframe {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  iframe {
-    width: 25%;
-    padding: 0 15% 0 15%;
   }
 }
 
@@ -472,6 +471,9 @@ iframe {
 .showsshows__date {
   width: 11rem;
 }
+.shows__list > li > h3 {
+  width: 11rem;
+}
 .shows__table--active {
   background-color: #E1E1E1;
 }
@@ -481,5 +483,5 @@ iframe {
 }
 
 .shows__table--active {
-  background-color: #E1E1E1;
+  color: purple;
 }/*# sourceMappingURL=shows.css.map */
