@@ -382,20 +382,20 @@ h1 {
     padding: 1.5rem 5rem 1.5rem 5rem;
   }
 }
-.gallery img {
+.gallery__photo {
   width: 100%;
   height: auto;
   padding-top: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .gallery img {
+  .gallery__photo {
     display: grid;
     width: 30%;
     padding: 1rem 0.5rem 1rem 0.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .gallery img {
+  .gallery__photo {
     width: 30%;
     padding: auto;
   }
@@ -407,14 +407,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
-
-input:active {
-  border: 1px solid #323232;
-}
-
-textarea:active {
-  border: 1px solid #323232;
 }
 
 ::-moz-placeholder {
@@ -430,10 +422,6 @@ textarea:active {
 ::placeholder {
   color: black;
   font-size: 1rem;
-}
-
-input:invalid {
-  background-color: pink;
 }
 
 .comments {
@@ -499,6 +487,9 @@ input:invalid {
   background-color: #FAFAFA;
   font-size: 1rem;
 }
+.comments__name-input:active {
+  border: 1px solid #323232;
+}
 .comments__comment-input {
   border-radius: 4px;
   border: 1px solid #E1E1E1;
@@ -507,6 +498,9 @@ input:invalid {
   background-color: #FAFAFA;
   resize: none;
   font-size: 1rem;
+}
+.comments__comment-input:active {
+  border: 1px solid #323232;
 }
 .comments__container {
   border-bottom: solid 2px #E1E1E1;
@@ -572,14 +566,7 @@ input:invalid {
   margin-bottom: 0;
   font-weight: bold;
 }
-
-h5 {
-  color: #AFAFAF;
-  font-size: 0.9rem;
-  margin-bottom: 0;
-}
-
-.name-date {
+.comments__name-date {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

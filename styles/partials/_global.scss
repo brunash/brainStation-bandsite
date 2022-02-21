@@ -2,36 +2,17 @@
 @use './mixins'as *;
 @use './font'as *;
 
-// @font-face {
-//     font-family: "avenir-regular";
-//     src: url("../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
-// }
-
-// @font-face {
-//     font-family: "avenir-demi";
-//     src: url("../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
-// }
-
-// @font-face {
-//     font-family: "avenir-bold";
-//     src: url("../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
-// }
-
-
-
 html {
     font-family: "avenir";
 }
 
 body {
     margin: auto;
-
 }
 
 h2 {
     font-size: 2rem;
     line-height: 2rem;
-    // font-weight: 700;
 }
 
 .bandsite-logo {
@@ -49,7 +30,6 @@ a {
     background-color: $primary-background;
     color: $white-text;
     height: 87px;
-
 }
 
 .nav-bar {
@@ -69,8 +49,6 @@ a {
         @include desktop {
             padding-left: 5rem;
         }
-
-
     }
 
     @include tablet {
@@ -90,8 +68,6 @@ a {
         display: flex;
         width: 100%;
         color: $mercury;
-
-
 
         @include tablet {
             justify-content: left;
@@ -202,14 +178,11 @@ a {
     &__people-wrap--email {
         padding: 0.5rem 0 0.5rem 0;
         line-height: 5px;
-        // font-weight: 100;
 
         @include desktop {
             font-size: 0.85rem;
         }
     }
-
-
 }
 
 .contact__social--bandsite-logo {
@@ -226,7 +199,6 @@ a {
     }
 }
 
-
 .comments__button {
     display: flex;
     align-items: center;
@@ -238,5 +210,4 @@ a {
     border-radius: 5px;
     line-height: 20px;
     font-size: 1.1rem;
-    // font-weight: 550;
 }

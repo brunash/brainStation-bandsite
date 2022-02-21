@@ -1,23 +1,19 @@
-let commentArray = [
-    {
-    date: "12/20/2020",
-    name: "Miles Acosta",
-    comment: "I can t stop listening. Every time I hear one of their songs the vocals it givesme goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can t get enough."
-    },
-    {
-    date: "01/09/2021",
-    name: "Emilie Beach",
-    comment: "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day."
-    },{
-    date: "02/17/2021",
-    name: "Connor Walton",
-    comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains."
-    }
-    
-    
-];
-
+let showUrl = 'https://project-1-api.herokuapp.com/comments'
+const apiKey = "fda055af-558f-4983-90ba-5f9ff65e9b1f"
 let inputComment = document.querySelector(".comments__wrap");
+
+axios
+.get(showUrl + "?api_key=" + apiKey)
+.then((response) => {
+    commentArray = response.data;
+    commentArray.forEach((commentContainer) => {
+    displayComment(commentContainer);
+})
+})
+.catch(error => {
+})
+
+let commentArray = [];
 
 function displayComment(arr) {
     let commentContainer = document.createElement("div");
@@ -30,14 +26,14 @@ function displayComment(arr) {
     addedComments.classList.add("comments__added");
     
     let nameDate = document.createElement("div");
-    nameDate.classList.add("name-date");
+    nameDate.classList.add("comments__name-date");
 
     let nameUser = document.createElement("h4");
     nameUser.innerText = arr.name;
 
     let dateUser = document.createElement("p");
-    dateUser.classList.add("comments__added-date")
-    dateUser.innerText = arr.date;
+    dateUser.classList.add("comments__added-date");
+    dateUser.innerText = new Date(Number(arr.timestamp)).toLocaleDateString();
 
     let commentUser = document.createElement("p");
     commentUser.innerText = arr.comment;
@@ -49,36 +45,43 @@ function displayComment(arr) {
     addedComments.appendChild(commentUser);
     nameDate.appendChild(nameUser);
     nameDate.appendChild(dateUser);
-
 }
 
 commentArray.forEach((commentContainer) => {
     displayComment(commentContainer);
 })
 
-console.log(commentArray)
-
 let formComment = document.querySelector(".comments__form")
-let today = new Date;
+let today = new Date();
 
 formComment.addEventListener('submit', (event) => {
     event.preventDefault();
     
     let nameInput = event.target.name.value;
     let commentInput = event.target.comment.value;
-    console.log(nameInput)
-    console.log(commentInput)
-
+    axios
+    .post(showUrl + "?api_key=" + apiKey, {
+        name: nameInput,
+        comment: commentInput,    
+    })
+    .then((response) => {
+        axios
+        .get(showUrl + "?api_key=" + apiKey)
+        .then((response) => {     
+            let comments = response.data;
+            })
+     })
+    .catch((error) => {     
+});
     if (nameInput && commentInput) {
       commentArray.unshift({
           name: nameInput,
           comment: commentInput,
-          date: today.toLocaleDateString("en-US"),
-      })
+          timestamp: today,
+         })
    
     displayComment(commentArray[0])
     }
-
-    formComment.reset()
+formComment.reset()
 })
 

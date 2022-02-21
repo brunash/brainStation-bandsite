@@ -72,6 +72,21 @@ li {
         }
     }
 
+    &__song {
+        border-radius: 6px;
+        height: 7.5rem;
+        border: none;
+
+        @include tablet {
+            width: 65%;
+        }
+
+        @include desktop {
+            width: 40%;
+            padding: 0 15% 0 15%;
+        }
+    }
+
     &__title {
         width: 80%;
         font-size: 2rem;
@@ -85,31 +100,16 @@ li {
     }
 }
 
-
-
-
-iframe {
-    border-radius: 6px;
-    height: 7.5rem;
-    border: none;
-
-    @include tablet {
-        width: 50%;
-    }
-
-    @include desktop {
-        width: 25%;
-        padding: 0 15% 0 15%;
-    }
-
-}
-
 .shows {
     padding: 1rem;
     margin: 0;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+
+    @include tablet {
+        padding: 2rem;
+    }
 
     @include desktop {
         flex-direction: row;
@@ -174,6 +174,10 @@ iframe {
         font-size: 0.8rem;
     }
 
+    &__table--active {
+        background-color: $mercury;
+    }
+
     &__table:hover {
         background-color: $alabaster;
         transition: 0.25s;
@@ -188,9 +192,7 @@ iframe {
             flex-direction: row;
             width: 100%;
             justify-content: space-between;
-
         }
-
     }
 
     &__list-container {
@@ -203,7 +205,7 @@ iframe {
         }
     }
 
-    button {
+    &__button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -221,11 +223,10 @@ iframe {
         }
     }
 
-    h5 {
+    &__heading--small {
         color: $silver;
         font-weight: 600;
         font-size: 0.9rem;
-
 
         @include tablet {
             display: none;
@@ -234,6 +235,9 @@ iframe {
 
     &__table {
         padding: 0;
+        width: 100%;
+        border-bottom: solid 2px $mercury;
+        padding-bottom: 1rem;
 
         @include tablet {
             display: flex;
@@ -254,27 +258,16 @@ iframe {
         margin-right: 10rem;
     }
 
-    &__list>li>p {
+    &__venue-location {
+        width: 11rem;
+    }
+
+    &shows__date {
         width: 11rem;
     }
 
     &__list>li>h3 {
         width: 11rem;
-    }
-
-    &__list>li {
-        width: 100%;
-        border-bottom: solid 2px $mercury;
-        padding-bottom: 1rem;
-    }
-
-    &__list>a {
-        width: 100;
-    }
-
-    &__list>li:active {
-        background-color: $mercury;
-        transition: 0.25s;
     }
 }
 

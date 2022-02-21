@@ -288,6 +288,22 @@ li {
     font-weight: 700;
   }
 }
+.hero__song {
+  border-radius: 6px;
+  height: 7.5rem;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__song {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__song {
+    width: 40%;
+    padding: 0 15% 0 15%;
+  }
+}
 .hero__title {
   width: 80%;
   font-size: 2rem;
@@ -301,29 +317,17 @@ li {
   }
 }
 
-iframe {
-  border-radius: 6px;
-  height: 7.5rem;
-  border: none;
-}
-@media screen and (min-width: 768px) {
-  iframe {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  iframe {
-    width: 25%;
-    padding: 0 15% 0 15%;
-  }
-}
-
 .shows {
   padding: 1rem;
   margin: 0;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .shows {
+    padding: 2rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   .shows {
@@ -388,6 +392,9 @@ iframe {
   font-weight: 600;
   font-size: 0.8rem;
 }
+.shows__table--active {
+  background-color: #E1E1E1;
+}
 .shows__table:hover {
   background-color: #FAFAFA;
   transition: 0.25s;
@@ -414,7 +421,7 @@ iframe {
     width: 80%;
   }
 }
-.shows button {
+.shows__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -428,22 +435,25 @@ iframe {
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-  .shows button {
+  .shows__button {
     width: 9rem;
   }
 }
-.shows h5 {
+.shows__heading--small {
   color: #AFAFAF;
   font-weight: 600;
   font-size: 0.9rem;
 }
 @media screen and (min-width: 768px) {
-  .shows h5 {
+  .shows__heading--small {
     display: none;
   }
 }
 .shows__table {
   padding: 0;
+  width: 100%;
+  border-bottom: solid 2px #E1E1E1;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .shows__table {
@@ -463,23 +473,14 @@ iframe {
   padding: 0;
   margin-right: 10rem;
 }
-.shows__list > li > p {
+.shows__venue-location {
+  width: 11rem;
+}
+.showsshows__date {
   width: 11rem;
 }
 .shows__list > li > h3 {
   width: 11rem;
-}
-.shows__list > li {
-  width: 100%;
-  border-bottom: solid 2px #E1E1E1;
-  padding-bottom: 1rem;
-}
-.shows__list > a {
-  width: 100;
-}
-.shows__list > li:active {
-  background-color: #E1E1E1;
-  transition: 0.25s;
 }
 
 #shows__list-big-screen > li {
